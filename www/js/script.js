@@ -1,7 +1,7 @@
 document.querySelector('button').addEventListener('click', getRapper)
 
 async function getRapper() {
-    let rapper = document.querySelector('input').value;
+    const rapper = document.querySelector('input').value;
     console.log(rapper);
     // fetch(`localhost:8000/api/${rapper}`)
     // .then(response)

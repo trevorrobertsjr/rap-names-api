@@ -1,9 +1,11 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const cors = require('cors');
 const PORT = 8000;
 const DEFAULTRAPPER = 'dylan'
 
+app.use(cors());
 const rappers = {
     '21 savage': {
         'age': 29,
