@@ -8,7 +8,7 @@ async function getRapper() {
     // .then(data)
     try {
         // const res = await fetch(`http://localhost:8000/api/${rapper}`);
-        const res = await fetch(`https://my-rap-names-api.herokuapp.com/${rapper}`);
+        const res = await fetch(`https://my-rap-names-api.herokuapp.com/api/${rapper}`);
         const data = await res.json();
         // console.log(data);
         document.querySelector('h2').innerText = `Birth Name: ${data.birthName}`
